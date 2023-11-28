@@ -1,6 +1,7 @@
 # Explicación código
 
 ##Archivo add_loop_cpu.cu
+
 Este código en C realiza la suma de dos arreglos a y b y almacena el resultado en un tercer arreglo c.\n
 ```c
 void add( int *a, int *b, int *c ) {
