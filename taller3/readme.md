@@ -148,3 +148,24 @@ donde "idjob" es el id del job que se generó al ejecutar el sbatch.\n
 La ejecución de ese comando nos da como resultado lo siguiente:
 <img width="621" alt="image" src="https://github.com/SC3UIS/IntroPP2191621/assets/67378380/a2c0c50e-87ae-45c0-a788-10a1bb790c86">
 Gracias a esto podemos observar la gran diferencia que hay cuando se hace uso de la paralelización en GPU y en como esta ayuda a mejorar considerablemente los tiempos de ejecución de archivos en los cuales se tenga que hacer una gran cantidad de iteaciones.
+
+## Ejecutar código de manera activa
+Para ejecutar el código de manera activa solo tendremos que realizar lo siguiente:
+```git
+git clone https://github.com/SC3UIS/IntroPP2191621.git
+```
+Seguido de este comando debemos ir a la carpeta donde estáran almacenados nuestro archivos.
+```shell
+cd Taller3
+```
+Por cada archivo que tengamos en nuestro directorio, ejecutaremos el siguiente comando:
+```shell
+nvcc tu_archivo.cu -o tu_ejecutale
+```
+donde "tu_archivo.cu" es el archivo que deseas compilar
+Y para ejecutar el archivo solo tendremos que llamar al ejecutable que creamos:
+```shell
+./tu_ejecutable
+```
+<img width="1512" alt="image" src="https://github.com/SC3UIS/IntroPP2191621/assets/67378380/683b37fe-f477-4afe-b7b5-6d5e4ee5854e">
+
