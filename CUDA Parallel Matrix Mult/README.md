@@ -18,9 +18,7 @@ Antes de realizar el código se realizaron una modificaciónes para poder ejecut
 
 Para ejecutar ejecutamos el siguiente comando
 ```shell
-nvcc matrixMult.cu -arch=sm_70 -o matrixMult -run
+nvcc matrixMult.cu -arch=sm_30 -o matrixMult -run
 ```
-
-El error "Invalid memory reference" (referencia de memoria no válida) en CUDA generalmente indica que hay un problema con el acceso a la memoria del dispositivo. En el código proporcionado, se utiliza cudaMallocManaged para asignar memoria unificada, lo que significa que la memoria es accesible tanto desde el host como desde el dispositivo. Sin embargo, estos errores pueden ocurrir si hay un problema en el acceso a la memoria.
-    
-    
+Al realizar la ejecución del comando obtenemos lo siguiente:
+<img width="593" alt="image" src="https://github.com/SC3UIS/IntroPP2191621/assets/67378380/3e431832-7d4b-43f1-88c8-7f832e7ca866">
