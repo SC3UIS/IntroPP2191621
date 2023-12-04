@@ -14,6 +14,11 @@ srun -n 8 --gres=gpu:2 --pty /bin/bash
 
 In this specific case, we are going to use 2 GPUs
 
+After that, we are going to load the CUDA module using the following command:
+```shell
+module load devtools/cuda/8.0
+```
+
 Before running the code, modifications were made to enable its execution on CUDA 8.0, as the code was originally written in CUDA 11.8.
 
 To run the code, you will use the next command:
