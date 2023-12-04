@@ -26,4 +26,6 @@ To run the code, you will use the next command:
 nvcc matrixMult.cu -arch=sm_30 -o matrixMult -run
 ```
 When executing the command, we obtain the following:
+
+
 <img width="593" alt="image" src="https://github.com/SC3UIS/IntroPP2191621/assets/67378380/3e431832-7d4b-43f1-88c8-7f832e7ca866">
