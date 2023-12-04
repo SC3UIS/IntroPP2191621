@@ -29,3 +29,25 @@ When executing the command, we obtain the following:
 
 
 <img width="593" alt="image" src="https://github.com/SC3UIS/IntroPP2191621/assets/67378380/3e431832-7d4b-43f1-88c8-7f832e7ca866">
+
+
+## Run Code In Yaje
+
+We are going to run the code in YAJE and to request resource and get a connection with Yaje we are going to use the next commands:
+```shell
+srun -p Viz -n 2 --pty /bin/bash
+```
+Where 2 is the number of nodes that we are using.
+
+and the we are going to load the modules:
+```shell
+module load devtools/cuda/8.0
+```
+and then to run the code we will use this:
+```shell
+nvcc matrixMult.cu -arch=sm_30 -o matrixMult -run
+```
+
+When executing the command, we obtain the following:
+<img width="1068" alt="image" src="https://github.com/SC3UIS/IntroPP2191621/assets/67378380/2d080247-e0e5-433a-8998-a10bf91f7ed7">
+
