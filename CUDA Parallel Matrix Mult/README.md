@@ -1,24 +1,24 @@
 # Parallelizing Matrix Multiplication using CUDA
 
-## Ejecución de código en GUANE
+## Code execution in GUANE
 
-Una vez ingresado a GUANE correremos el siguiente comando:
+Once you are in GUANE you will run the next commands: 
 
 ```shell
 srun -n 8 --pty /bin/bash
 ```
-En este caso estaremos usando una maquina que tiene 8 nodos con la máxima cantidad de GPUs disponibles, pero en dado caso que vayamos a requerir un numero específico de GPUs usamos el siguiente comando:
+In this case we are using a machine with 8 nodes and the maximum GPU quantity available, but, in the case that you will need to require an especific number of GPUs we will use the next command: 
 ```shell
 srun -n 8 --gres=gpu:2 --pty /bin/bash
 ```
 
-Donde en este caso estamos solicitando el uso de 2 GPUs.
+In this specific case, we are going to use 2 GPUs
 
-Antes de realizar el código se realizaron una modificaciónes para poder ejecutarlo en CUDA 8.0 ya que el código se escribió en CUDA 11.8
+Before running the code, modifications were made to enable its execution on CUDA 8.0, as the code was originally written in CUDA 11.8.
 
-Para ejecutar ejecutamos el siguiente comando
+To run the code, you will use the next command:
 ```shell
 nvcc matrixMult.cu -arch=sm_30 -o matrixMult -run
 ```
-Al realizar la ejecución del comando obtenemos lo siguiente:
+When executing the command, we obtain the following:
 <img width="593" alt="image" src="https://github.com/SC3UIS/IntroPP2191621/assets/67378380/3e431832-7d4b-43f1-88c8-7f832e7ca866">
