@@ -1,3 +1,6 @@
+#Video explaining the solution:
+[Video explicando la solución](https://youtu.be/3HMzu_yRq8k?si=3qh-UlRKpG7vXySA)
+
 # Parallelizing Matrix Multiplication using CUDA
 
 ## Code execution in GUANE
